@@ -909,13 +909,18 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
     width: 28%;
     height: -100px;
     top: -30px;
-    left: 320px;
+    left: 450px;
 } 
 
 .reserve-coffee .text-group .more{
     position: absolute;
     top: 180px;
     left: 0px;
+}
+
+.reserve-coffee .text-group .more .btn{
+    position: absolute;
+    left: 180px;
 }
 
 /* .reserve-coffee .reserve{
