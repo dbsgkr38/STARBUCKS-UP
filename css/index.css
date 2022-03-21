@@ -377,7 +377,7 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 
 .badges{
     position: absolute;
-    right: 90px;
+    right: 30px;
     top: 155px;
     z-index: 10;
 }
@@ -415,20 +415,20 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 
 .visual .cup1.image{
     position: absolute;
-    top: 170px;
-    right: 380px;
+    top: 230px;
+    left: 220px;
 }
 
 .visual .cup2.image{
     position: absolute;
-    bottom: 80px;
-    right: 130px;
+    top: 30px;
+    left: 480px;
 }
 
 .visual .cup3.image{
     position: absolute;
-    bottom: 20px;
-    right: -95px;
+    bottom: 40px;
+    right: -75px;
 }
 
 
