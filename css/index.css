@@ -3,6 +3,8 @@
 
 /* ----------/common/---------- */
 
+
+
 body{
     color: #333;
     font-size: 16px;
@@ -14,12 +16,7 @@ body{
 
 img{display: block;}
 
-/* inner */
-.inner{
-    width: 1200px;
-    margin: auto;
-    position: relative;
-}
+
 
 /* button */
 .btn{
@@ -154,9 +151,490 @@ img{display: block;}
 
 
 
+@media all and (min-width : 768px){
+    /* body{background: yellowgreen;} */
 
+    .inner{
+        width: 100%;
+        margin: auto;
+        position: relative;
+    }
+
+    .hidden{
+        display: none;
+    }
+    .main-menu{display: none;}
+
+    header{
+        width: 100%;
+        margin: auto;
+    }
+
+    header .inner{
+        height: 100px;
+        background: #fff;
+        margin: auto;
+    }
+
+  
+
+    header .inner h1 a.logo{
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    header .inner h1 a.logo img{
+        width: 60px;
+    }
+
+    header .sub-menu{display: none;}
+
+    .headerContainer {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .headerContainer .icons a:nth-child(1) {
+          position: absolute;
+          right: 85px;
+          top: -63px;
+          width: 120px;
+      }
+
+      .headerContainer .icons a:nth-child(2){
+          position: absolute;
+          right: 20px;
+          top: -65px;
+          width: 110px;
+      }
+      
+    .toggleBtn {
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        right: 0px;
+        margin-right: 20px;
+        top: 40px;
+        z-index: 250;
+      }
+      
+      .toggleBtn span {
+        width: inherit;
+        height: 5px;
+        background: #55443A;
+      }
+
+      .toggleBtn.active{
+        right: 600px;
+    }
+
+    .headerContainer{
+        position: relative;
+    }
+
+    .headerContainer .icons{
+        width: 200px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+    }
+
+    .headerContainer .icons a{
+        position: relative;
+        width: 100%;
+    }
+
+    .headerContainer .icons img{
+        width: 25%;
+        position: absolute;
+
+    }
+
+
+      /* 햄버거 버튼 x모양으로 변경 */
+      .toggleBtn.active #one{
+        transform: translateY(12px) rotate(-135deg);
+        transition: all .6s ease-in-out;
+      }
+
+       .toggleBtn.active #two{
+        opacity: 0;
+      }
+
+       .toggleBtn.active #three{
+        transform: translateY(-12px) rotate(-45deg);
+        transition: all .6s ease-in-out;
+      }
+      
+      
+      /* 아코디언 메뉴 */
+      #menu-mo {
+        position: fixed;
+        width: 600px;
+        height: 100%;
+        top: 0px;
+        right: -600px;
+        z-index: 100;
+        transition: all 0.3s ease-in;
+        background-color: #111111;
+        padding: 50px 0;
+      }
+
+      #menu-mo .menu-search{
+          width: 100%;
+          height: 120px;
+          position: absolute;
+          left: 0px;
+          border-bottom: 1px solid #111;
+          margin: auto;
+          background: #2D2926;
+          top: 00px;
+      }
+
+      
+
+      #menu-mo .menu-search input{
+          width: 350px;
+          height: 50px;
+          background: #fff;
+          margin: auto;
+          border-radius: 3px;
+          position: absolute;
+          left: 50px;
+          top: 30px;
+      }
+
+      #menu-mo .menu-search a{
+          width: 130px;
+          height: 50px;
+          background: #777;
+          position: absolute;
+          right: 55px;
+          border-radius: 3px;
+          text-align: center;
+          padding-top: 3px;
+          font-size: 30px;
+          font-weight: bold;
+          color: #fff;
+          top: 30px;
+      }
+
+      #menu-mo .menu-search a:hover{
+          text-decoration: underline;
+      }
+      
+      #menu-mo.show {
+        right: 0px;
+        transition: all 0.3s ease-in;
+      }
+      
+      .main-mo {
+        background: #111111;
+        cursor: pointer;
+        padding: 16px;
+        width: 100%;
+        text-align: left;
+        font-size: 30px;
+        transition: 0.4s;
+        position: relative;
+        top: 70px;
+        color: #fff;
+        border-bottom: 1px solid #333333;
+      }
+
+      .star-1{
+          background: #2D2926;
+      }
+
+      
+      .sub-mo {
+        font-size: 14px;
+        overflow: hidden;
+        width: 100%;
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+        background: #e05421;
+        position: relative;
+        top: 80px;
+      }
+     /* -------------뱃지--------- */
+
+      .badges{
+          position: fixed;
+          right: 00px;
+          top: 125px;
+          z-index: 10;
+      }
+
+
+      /* -------------main화면------------ */
+      .visual{
+          width: 100%;
+          position: relative;
+          height: 455px;
+          background: url(../imges/main/2022_Spring_main_bg.jpg) center no-repeat;
+          background-size: cover;
+          margin: auto;
+      }
+
+      .visual .inner{
+          width: 90%;
+          margin: auto;
+      }
+
+      .visual .title{
+          width: 250px;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+      }
+
+      .visual .title .btn{
+          position: absolute;
+          top: 130px;
+          left: 70px;
+          height: 30px;
+          width: 100px;
+          border: 2px solid;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 0.3;
+      }
+
+      .visual .cup1{
+          position: absolute;
+          top: 150px;
+          left: 120px;
+          width: 390px;
+      }
+
+      .visual .cup2{
+          position: absolute;
+          top: 20px;
+          left: 310px;
+          width: 310px;
+      }
+
+      .visual .cup3{
+          position: absolute;
+          top: 80px;
+          left: 580px;
+          width: 260px;
+      }
+
+
+      /* ----------------공지사항-------------- */
+
+      .notice-line{
+        position: relative;
+    }
+    
+    .notice-line .bg-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: #111;
+    }
+    
+    .notice-line .bg-right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: #f6f5ef;
+    }
+    
+    .notice-line .inner{
+        height: 62px;
+        display: flex;
+    }
+    
+    .notice-line .inner .inner__left{
+        width: 55%;
+        background: #111;
+        display: flex;
+        align-items: center;
+    }
+    
+    .notice-line .inner .inner__left h2{
+        color: #fff;
+        font-size: 17px;
+        font-weight: 700;
+        margin-right: 20px;
+        width: 100px;
+        text-indent: 20px;
+    }
+    
+    .notice-line .inner .inner__left .swiper{
+        height: 62px;
+        display: flex;
+        flex-grow: 1;
+    }
+    
+    .notice-line .inner .inner__left .swiper .swiper-slide{
+        height: 62px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .notice-line .inner .inner__left .swiper .swiper-slide a{
+        color: #fff;
+        font-size: 13px;
+    }
+    
+    .notice-line .inner .inner__left .notice-line__more{
+        width: 62px;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .notice-line .inner .inner__left .notice-line__more .material-icons{
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    .notice-line .inner .inner__right{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .notice-line .inner .inner__right h2{
+        padding-right: 20px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    .notice-line .inner .inner__right .material-icons{
+        font-size: 30px;
+        cursor: pointer;
+        border: 2px solid #222;
+        border-radius: 50%;
+        margin-right: 150px;
+        padding-top: 2px;
+        font-weight: 600;
+    }
+
+    /* -------------PROMOTION------------ */
+    
+    .promotion{
+        width: 100%;
+        position: relative;
+    }
+
+    .promotion .swiper{
+        width: 100%;
+    }
+
+    .promotion .swiper-wrapper{
+        width: 100%;
+        margin: auto;
+    }
+    .promotion .swiper-wrapper .swiper-slide{
+        width: 90%;
+        margin: auto;
+    }
+
+    .promotion .swiper-wrapper .swiper-slide img{
+        width: 550px;
+        margin: auto;
+    }
+
+    .promotion .swiper-wrapper .swiper-slide a{
+        position: absolute;
+        bottom: 0px;
+        left: 275px;
+        z-index: 60;
+        height: 40px;
+        border-radius: 3px;
+        line-height: 1;
+    }
+
+    .promotion .swiper-pagination{
+        position: relative;
+        bottom: -100px;
+        width: 100%;
+        height: 40px;
+    }
+
+    /* swiper 이전, 다음버튼 */
+.notice .promotion .swiper-prev,
+.notice .promotion .swiper-next{
+    position: absolute;
+    top: 0px;
+    width: 42px;
+    height: 42px;    
+    z-index: 2;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.notice .promotion .swiper-prev{
+    left: 50%;
+    margin-left: -480px;
+}
+.notice .promotion .swiper-next{
+    right: 50%;
+    margin-right: -480px;
+}
+.notice .promotion .swiper-prev:hover,
+.notice .promotion .swiper-next:hover{
+    background: #333;
+    color: #fff;
+}
+    
+}
+
+
+
+@media all and (min-width : 1200px) {
+/* body{background: violet;} */
+
+.headerContainer,
+#menu-mo{
+    display: none;
+    background: none;
+}
+
+
+/* inner */
+header{
+    width: 100%;
+}
+.inner{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
 
 /* ----------/Header Area/---------- */
+
+#menu-mo{display: none;}
+.main-menu{display: block;}
 header{
     width: 100%;
     background: #f6f5f0;
@@ -394,7 +872,9 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 .visual{
     position: relative;
     background: url(../imges/main/2022_Spring_main_bg.jpg) no-repeat center;
+    background-size: cover;
     margin-top: 120px;
+    height: 647px;
 }
 
 .visual .inner{
@@ -403,32 +883,41 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 
 .visual .title{
     position: absolute;
-    top: 88px;
-    left: 10px;
+    top: 70px;
+    left: 280px;
+    width: 450px;
 }
 
 .visual .title .btn{
     position: absolute;
-    top: 200px;
-    left:  105px;
+    top: 180px;
+    left:  110px;
+    width: 120px;
+    height: 37px;
+    text-align: center;
+    padding-left: 7px;
+    padding-top: 13px;
 }
 
 .visual .cup1.image{
     position: absolute;
-    top: 230px;
-    left: 220px;
+    top: 210px;
+    left: 780px;
+    width: 550px;
 }
 
 .visual .cup2.image{
     position: absolute;
     top: 30px;
-    left: 480px;
+    left: 1070px;
+    width: 480px;
 }
 
 .visual .cup3.image{
     position: absolute;
-    bottom: 40px;
-    right: -75px;
+    top: 100px;
+    left: 1520px;
+    width: 370px;
 }
 
 
@@ -574,7 +1063,7 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 /* 자세히보기 버튼 */
 .notice .promotion .swiper .btn{
     position: absolute;
-    bottom: 15px;
+    bottom: 0px;
     left: 0;
     right: 0;
     margin: auto;
@@ -908,8 +1397,8 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
     z-index: 1;
     width: 28%;
     height: -100px;
-    top: -30px;
-    left: 450px;
+    top: -80px;
+    left: 600px;
 } 
 
 .reserve-coffee .text-group .more{
@@ -956,6 +1445,7 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 .pick-your-favorite .description{
     margin-bottom: 40px;
 }
+
 
 .pick-your-favorite .text-group .fav_img{
     background-image: url(../imges/main/2022_Spring_pick_img.png);
@@ -1312,5 +1802,6 @@ footer .inner .logo{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
 }
 
