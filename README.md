@@ -64,3 +64,17 @@ main이 되는 css보다 먼저 아래 링크를 선언해준다.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 #시간차 등장모션제작
+
+```.show .back-to-position.delay-0{
+    transition-delay: 0s;
+}
+.show .back-to-position.delay-1{
+    transition-delay: 0.3s;
+}
+.show .back-to-position.delay-2{
+    transition-delay: 0.6s;
+}
+.show .back-to-position.delay-3{
+    transition-delay: 0.9s;
+}
+
