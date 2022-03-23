@@ -1397,7 +1397,7 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
     z-index: 1;
     width: 28%;
     height: -100px;
-    top: -80px;
+    top: -100px;
     left: 600px;
 } 
 
@@ -1409,7 +1409,7 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 
 .reserve-coffee .text-group .more .btn{
     position: absolute;
-    left: 80px;
+    left: 300px;
 }
 
 /* .reserve-coffee .reserve{
