@@ -902,21 +902,21 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 .visual .cup1.image{
     position: absolute;
     top: 210px;
-    left: 780px;
+    left: 480px;
     width: 550px;
 }
 
 .visual .cup2.image{
     position: absolute;
-    top: 30px;
-    left: 1070px;
+    top: 20px;
+    left: 730px;
     width: 480px;
 }
 
 .visual .cup3.image{
     position: absolute;
     top: 100px;
-    left: 1520px;
+    left: 1170px;
     width: 370px;
 }
 
