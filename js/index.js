@@ -109,7 +109,17 @@ new Swiper('.promotion .swiper', {
         prevEl : ".promotion .swiper-prev",
         nextEl : ".promotion .swiper-next"
     },
-    slidesPerView: 3, //한 번에 보여줄 슬라이드 개수
+    breakpoints: { //반응형 조건 속성
+        320: { //320 이상일 경우
+          slidesPerView: 1, //레이아웃 1열
+        },
+        768: {
+          slidesPerView: 1, //레이아웃 3열
+        },
+        960: {
+          slidesPerView: 3, //레이아웃 4열
+        },
+      },
     spaceBetween: 10, //슬라이드 사이 여백
     centeredSlides: true //1번 슬라이드가 가운데 보이기
 });
@@ -187,3 +197,47 @@ spyEls.forEach(function (spyEl) {
     .setClassToggle(spyEl, "show")
     .addTo(new ScrollMagic.Controller());
 });
+
+
+// 메뉴토글버튼
+
+const menuToggleBtn = document.querySelector('.toggleBtn')
+const menuHide = document.getElementById('menu-mo')
+let isHideMenu = false;
+
+menuToggleBtn.addEventListener('click', function(){
+    isHideMenu = !isHideMenu;
+    if(isHideMenu){
+        menuToggleBtn.classList.add('active')
+        menuHide.classList.add('show')
+    } else {
+        menuToggleBtn.classList.remove('active')
+        menuHide.classList.remove('show')
+    }
+})
+
+
+// 아코디언 메뉴
+const main = document.querySelectorAll('.main-mo');
+
+for (let i = 0; i < main.length; i++){
+    main[i].addEventListener("click", function() {
+    // 다른메뉴 클릭시 기존에 열어둔 서브메뉴 비활성화
+       for(let j = 0; j < main.length; j++){
+        main[j].classList.remove('active');
+        if (this !== main[j]) {
+            main[j].nextElementSibling.style.maxHeight = null;
+        }
+    };
+        
+        
+    // 메뉴 클릭시 서브메뉴 활성화
+    this.classList.toggle('active');
+    const sub = this.nextElementSibling;
+    if(sub.style.maxHeight) {
+        sub.style.maxHeight = null;
+    } else {
+        sub.style.maxHeight = sub.scrollHeight + "px";
+    }
+});
+}
