@@ -29,7 +29,7 @@ main이 되는 css보다 먼저 아래 링크를 선언해준다.
 --- Swiper Slide
 ###Swiper html
 <!-- Slider main container -->
-```<div class="swiper">
+`<div class="swiper">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
@@ -47,11 +47,11 @@ main이 되는 css보다 먼저 아래 링크를 선언해준다.
   <!-- If we need scrollbar -->
   <div class="swiper-scrollbar"></div>
 </div>
-```
+`
 
 ###Swiper option
 
-```
+`
 new Swiper('변경 .swiper', {
     direction: 'horizontal', //방향
     loop: true, //무한반복
@@ -74,9 +74,9 @@ new Swiper('변경 .swiper', {
     },
   }
 });
-```
-```<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>```
+`
+`<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>`
 
 
 # scroll magic
