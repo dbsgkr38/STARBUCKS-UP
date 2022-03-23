@@ -68,13 +68,13 @@ main이 되는 css보다 먼저 아래 링크를 선언해준다.
 ```.show .back-to-position.delay-0{
     transition-delay: 0s;
 }
-**.show .back-to-position.delay-1{
+```.show .back-to-position.delay-1{
     transition-delay: 0.3s;
 }
-.show .back-to-position.delay-2{
+``.show .back-to-position.delay-2{
     transition-delay: 0.6s;
 }
-.show .back-to-position.delay-3{
+``.show .back-to-position.delay-3{
     transition-delay: 0.9s;
 }
 
